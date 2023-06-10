@@ -1,0 +1,222 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus, :active {
+  outline: none;
+}
+a:focus, a:active {
+  outline: none;
+}
+nav, footer, header, aside {
+  display: block;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #fff;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: #131313;
+}
+input, button, textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a, a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.conteiner {
+   width: 1171px;
+   height: 552.28px;
+   margin-top: 107px;
+   padding: 5px;
+}
+.slider__nav-bar {
+   margin-left: auto;
+}
+.slider__nav {
+   display: flex;
+   justify-content: flex-end;
+}
+.slider__paragraph {
+   list-style: none;
+}
+.slider__paragraph:not(:last-child){
+   margin-right: 60.5px;
+}
+.slider__paragraph:last-child{
+   margin-right: 56px;
+}
+.slider__paragraph-title {
+   font-family: 'Yeseva One';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 19px;
+   text-transform: uppercase;
+   color: rgba(255, 255, 255, 0.3);
+}
+.slider__paragraph-title:hover {
+   color: #E3B873;
+   position: relative;
+}
+.slider__paragraph-title:hover::after {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 1px;
+   background: #E3B873;
+   bottom: -6.68px;
+   right: 0px;
+}
+.active {
+   font-family: 'Yeseva One';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 19px;
+   text-transform: uppercase;
+   color: #E3B873;
+   position: relative;
+}
+.active::after{
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 1px;
+   background: #E3B873;
+   bottom: -6.68px;
+   right: 0px;
+}
+.slider__body {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 4.31%;
+}
+.slider__content {
+   width: 38.071%;
+}
+.text__description-title {
+   margin-bottom: 4.7%;
+   width: 57.24%;
+}
+.description-title {
+   font-family: 'Yeseva One';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 27px;
+   line-height: 37px;
+   letter-spacing: -0.07em;
+   text-transform: uppercase;
+   color: #E3B873;
+   position: relative;
+}
+.description-title::after{
+   content: "";
+   position: absolute;
+   width: 92px;
+   height: 1px;
+   right: 0;
+   top: 52px;
+   background: #E3B873;
+}
+.description-subtitle {
+   font-family: 'Nunito Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 27px;
+   color: #FFFFFF;
+}
+.content__text-characteristic {
+   margin-top: 9.51%;
+   display: flex;
+   flex-wrap: wrap;
+   width: 88.6%;
+}
+.text__characteristic {
+   width: 45%;
+   margin-bottom: 34px;
+}
+.characteristic-title {
+   font-family: 'Yeseva One';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 25px;
+   text-transform: uppercase;
+   color: #E3B873;
+}
+.text__characteristic-subtitle {
+   margin-top: 9px;
+}
+.characteristic-subtitle {
+   font-family: 'Nunito Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 21px;
+   color: #FFFFFF;
+}
+.slider__content-arrow {
+   position: relative;
+   height: 65px;
+} 
+.slider__content-pagination {
+   list-style: none;
+   display: flex;
+   gap: 17.54px;
+   justify-content: flex-start;
+   align-items: center;
+   position: absolute;
+   bottom: 0;
+}
+.slider__dot:hover{
+   fill-opacity: 1;
+}
+.active-rect{
+   fill-opacity: 1;
+}

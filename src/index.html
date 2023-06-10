@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Slider</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Yeseva+One&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="wrapper">
+      <div class="slider__conteiner conteiner">
+         <div class="slider__nav-bar">
+            <nav class="slider__nav">
+               <li class="slider__paragraph">
+                  <a href="#" class="slider__paragraph-title active">
+                     Rostov-on-Don Patriotic
+                  </a>
+               </li>
+               <li class="slider__paragraph">
+                  <a href="#"class="slider__paragraph-title">
+                     Sochi Thieves
+                  </a>
+               </li>
+               <li class="slider__paragraph">
+                  <a href="#" class="slider__paragraph-title">
+                     Rostov-on-Don Patriotic
+                  </a>
+               </li>
+            </nav>
+         </div>
+         <div class="slider__body">
+            <div class="slider__content">
+               <div class="slider__content-text ">
+                  <div class="content__text-description">
+                     <div class="text__description-title">
+                        <h1 class="description-title">
+                           Completed <br> projects
+                        </h1>
+                     </div>
+                     <div class="text__description-subtitle">
+                        <p class="description-subtitle">
+                           Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction <br>
+                           market we have made happy more than 1000 families
+                        </p>
+                     </div>
+                  </div>
+                  <div class="content__text-characteristic">
+                     <div class="text__characteristic">
+                        <div class="text__characteristic-title">
+                           <h2 class="characteristic-title">
+                              City:
+                           </h2>
+                        </div>
+                        <div class="text__characteristic-subtitle">
+                           <p class="characteristic-subtitle" id="city">
+                           </p>
+                        </div>
+                     </div>
+                     <div class="text__characteristic">
+                        <div class="text__characteristic-title">
+                           <h2 class="characteristic-title">
+                              apartment area:
+                           </h2>
+                        </div>
+                        <div class="text__characteristic-subtitle" id="apartment" data-current="0">
+                           <p class="characteristic-subtitle" id="apartament">
+                           </p>
+                        </div>
+                     </div>
+                     <div class="text__characteristic">
+                        <div class="text__characteristic-title">
+                           <h2 class="characteristic-title">
+                              Repair time:
+                           </h2>
+                        </div>
+                        <div class="text__characteristic-subtitle">
+                           <p class="characteristic-subtitle" id="repairTime">
+                           </p>
+                        </div>
+                     </div>
+                     <div class="text__characteristic">
+                        <div class="text__characteristic-title">
+                           <h2 class="characteristic-title">
+                              Repair Cost:
+                           </h2>
+                        </div>
+                        <div class="text__characteristic-subtitle">
+                           <p class="characteristic-subtitle" id="repairCost">
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="slider__content-arrow">
+                  <nav class="slider__content-pagination">
+                     <li class="content__pagination-arrow" id="arrow-prev">
+                        <a href="#" class="content__pagination-link">
+                           <svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.63807 13.2762L2.29917e-05 6.63813L6.63807 8.38405e-05L7.58563 0.947652L1.89516 6.63813L7.58563 12.3286L6.63807 13.2762Z" fill="white"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.947579 5.96822L41.4556 5.96823L41.4556 7.30829L0.947578 7.30828L0.947579 5.96822Z" fill="white"/>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="content__pagination">
+                        <a href="#" class="content__pagination-link">
+                           <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect class="slider__dot active-rect" x="0.0583496" y="0.456482" width="9.56667" height="9.56667" rx="4.78333" fill="white" fill-opacity="0.3"/>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="content__pagination">
+                        <a href="#" class="content__pagination-link">
+                           <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect class="slider__dot" x="0.0583496" y="0.456482" width="9.56667" height="9.56667" rx="4.78333" fill="white" fill-opacity="0.3"/>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="content__pagination">
+                        <a href="#" class="content__pagination-link">
+                           <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect class="slider__dot" x="0.0583496" y="0.456482" width="9.56667" height="9.56667" rx="4.78333" fill="white" fill-opacity="0.3"/>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="content__pagination-arrow" id="arrow-next">
+                        <a href="#" class="content__pagination-link">
+                           <svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0451 -6.10352e-05L41.6831 6.63798L35.0451 13.276L34.0975 12.3285L39.788 6.63798L34.0975 0.947506L35.0451 -6.10352e-05Z" fill="white"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M40.7355 7.30788L0.227539 7.30788L0.227539 5.96782L40.7355 5.96782L40.7355 7.30788Z" fill="white"/>
+                           </svg>
+                        </a>
+                     </li>
+                  </nav>
+               </div>
+            </div>
+            <div class="slider__images">
+               <img src="" alt="apartment" class="slider__img" id="images">
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="js/script.js"></script>
+</body>
+</html>
